@@ -1,13 +1,13 @@
 class Dlmt < Formula
   desc "Download a site's llms.txt and all linked markdown/JSON/YAML resources"
   homepage "https://github.com/ricardonunez-io/dlmt"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.1/dlmt-macos-arm64.tar.gz"
-      sha256 "5ea2674be56b1ca34cb4bfa12c8ce409cf4b2e0ff58f16db91cffd1b9e72c263"
+      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.2/dlmt-macos-arm64.tar.gz"
+      sha256 "236e02c8c59eab38ae9396e7c6f34666698bf714d37e706a58d9b5d0d164e70a"
 
       def install
         bin.install "dlmt-macos-arm64" => "dlmt"
@@ -17,8 +17,8 @@ class Dlmt < Formula
       end
     end
     on_intel do
-      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.1/dlmt-macos-x86_64.tar.gz"
-      sha256 "6e4af668d3dc8b4e991c3fad083f7687a09879b13eb985b1532b3287d64fcb59"
+      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.2/dlmt-macos-x86_64.tar.gz"
+      sha256 "e4eb04e58822c2f173e755fa10d15877abd8d267abc17e9984708f99142b4a8c"
 
       def install
         bin.install "dlmt-macos-x86_64" => "dlmt"
@@ -31,8 +31,8 @@ class Dlmt < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.1/dlmt-linux-arm64.tar.gz"
-      sha256 "92038c87f57842c2d2813238bab2a5f6522c13bf662c69eaa987496c42734d5c"
+      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.2/dlmt-linux-arm64.tar.gz"
+      sha256 "b3aa88caa580548861ac15dbe650119a38bdbd8ac5b69deecc644bf050c2c4cb"
 
       def install
         bin.install "dlmt-linux-arm64" => "dlmt"
@@ -42,8 +42,8 @@ class Dlmt < Formula
       end
     end
     on_intel do
-      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.1/dlmt-linux-x86_64.tar.gz"
-      sha256 "eb42e6aec791c1265c627f4ea4f07eb5371ccc47e67a78df61a19975a2cacee7"
+      url "https://github.com/ricardonunez-io/dlmt/releases/download/v0.1.2/dlmt-linux-x86_64.tar.gz"
+      sha256 "21bd0afb8b804cdc4fcf584f21156d17bf550e003049e3297c77f8971d9e8567"
 
       def install
         bin.install "dlmt-linux-x86_64" => "dlmt"
@@ -55,6 +55,6 @@ class Dlmt < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/dlmt --version")
+    assert_match "0.1.2", shell_output("#{bin}/dlmt --version")
   end
 end
